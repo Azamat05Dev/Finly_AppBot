@@ -1,0 +1,91 @@
+/* Umumiy fon */
+.admin-bg {
+  background: radial-gradient(circle at top, #1f53ff 0, #0b1020 40%, #05060a 100%);
+  min-height: 100vh;
+  color: #111827;
+}
+
+/* Navbar */
+.admin-navbar {
+  background: rgba(5, 6, 10, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+/* Login */
+.login-wrapper {
+  min-height: 100vh;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.login-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Sidebar */
+.sidebar-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+}
+
+/* Stat cards */
+.stat-card {
+  background: linear-gradient(135deg, #ffffff, #e8f0ff);
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Chart cards */
+.chart-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+}
+
+/* Animatsiyalar */
+@keyframes fade-up {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.4s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slide-left 0.4s ease-out forwards;
+}
+
+/* Jadval mayda bezaklar */
+.table-hover tbody tr:hover {
+  background-color: rgba(15, 23, 42, 0.03);
+}
